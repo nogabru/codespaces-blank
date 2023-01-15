@@ -1,0 +1,63 @@
+
+#include <stdio.h>
+#include <string.h>
+
+#pragma warning(disable:4996)
+
+int main()
+{
+	char s[100];
+	char r[12];
+	for (int i = 0; i < 5; i++)
+	{
+		gets(s);
+	
+		r[2*i]=s[1];
+		r[2*i + 1] = ' ';
+	}
+	r[10] = 0;
+	printf("%s\n", r);
+	getch();
+	return 0;
+}
+
+
+#include <stdio.h>
+#include <string.h>
+
+#pragma warning(disable:4996)
+
+int main()
+{
+	char s[100];
+	printf("please enter your string\n");
+	gets(s);
+	
+	while(strlen(s) < 10)
+	{
+
+	printf("please enter another string\n");
+			gets(s);
+	}
+
+	return 0;
+}
+
+
+#include <stdio.h>
+#include <string.h>
+
+#pragma warning(disable:4996)
+
+int main()
+{
+	char s[100];
+	gets(s);
+
+	int l;
+	l= (strlen(s)/2);
+	s[l] = NULL;
+	printf("%s",s);
+
+	return 0;
+}
